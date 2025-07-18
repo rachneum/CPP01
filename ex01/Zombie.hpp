@@ -6,7 +6,7 @@
 /*   By: raneuman <raneuman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 18:19:36 by raneuman          #+#    #+#             */
-/*   Updated: 2025/07/18 18:39:23 by raneuman         ###   ########.fr       */
+/*   Updated: 2025/07/18 18:40:14 by raneuman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ class	Zombie
 
 Zombie*	newZombie( std::string name );
 void	randomChump( std::string name );
+Zombie* zombieHorde( int N, std::string name z);
 		
 
 #endif

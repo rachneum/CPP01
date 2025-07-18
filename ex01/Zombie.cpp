@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: raneuman <raneuman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/17 18:24:37 by raneuman          #+#    #+#             */
-/*   Updated: 2025/07/18 18:38:20 by raneuman         ###   ########.fr       */
+/*   Created: 2025/07/17 18:25:25 by raneuman          #+#    #+#             */
+/*   Updated: 2025/07/18 18:40:09 by raneuman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-void	randomChump( std::string name )
-{//Zombie ici est le type de l’objet que ju veux créer (donc la classe Zombie).
-	Zombie	stackZombie(name);//stackZombie est le nom de la variable que je cree, l'objet.
-	stackZombie.announce();	
+Zombie::Zombie(std::string zombieName) : name(zombieName)//
+{
+    //name = zombieName;
+    std::cout << "Zombie " << name << " has been constructed." << std::endl;
+}
+
+void	Zombie::announce( void )
+{
+	std::cout << name << " BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+Zombie::~Zombie()
+{
+    std::cout << "Zombie " << name << " has been destroyed." << std::endl;
 }

@@ -1,0 +1,9 @@
+-> je peux donner le nom de mon stackZombie dans la fonction main??
+   La consigne demande pas de le faire dans randomChump??
+
+-> revoir la fonction Zombie.cpp car je ne comprends pas le fonctionnent
+   du destructeur et la premiere fonction..
+   pourquoi juste la fonction announce ne suffit pas??
+
+-> je dois pas "make heapZombie announce itself" dans ma fonction newZombie
+   mais dois le faire dans announce??
