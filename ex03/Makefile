@@ -1,4 +1,4 @@
-NAME = zombie
+NAME = weapon
 
 SRCS = 	main.cpp\
 		Weapon.cpp\

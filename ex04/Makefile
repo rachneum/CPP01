@@ -1,4 +1,4 @@
-NAME = zombie
+NAME = sed
 
 SRCS = 	main.cpp\
 		FileReplace.cpp\
