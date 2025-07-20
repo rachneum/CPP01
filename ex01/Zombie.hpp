@@ -1,36 +1,20 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: raneuman <raneuman@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/17 18:19:36 by raneuman          #+#    #+#             */
-/*   Updated: 2025/07/18 18:40:14 by raneuman         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 
-#ifndef  ZOMBIE_H
-# define ZOMBIE_H
-
-# include <string>//Me permet d'utiliser std::string.
+# include <string>
 # include <iostream>
-# include <cctype>//Pour isspace.
-# include <cstdlib>//Pour exit.
 
-class	Zombie
+class   Zombie
 {
-	private:
-		std::string	name;//Appartient a chque objet Zombie.
-	public:
-		Zombie(std::string zombieName);//Le constructeur sert à initialiser mon objet avec le nom que je choisi de donner.
-		~Zombie();
-		void	announce( void );
+    private:
+        std::string name;
+    public:
+        Zombie();
+        ~Zombie();
+        void    announce( void );
+        void    setName(std::string hordeName);
 };
 
-Zombie*	newZombie( std::string name );
-void	randomChump( std::string name );
-Zombie* zombieHorde( int N, std::string name z);
-		
+Zombie* zombieHorde( int N, std::string name );
 
 #endif

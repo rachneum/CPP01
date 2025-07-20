@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: raneuman <raneuman@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/17 18:19:36 by raneuman          #+#    #+#             */
-/*   Updated: 2025/07/18 18:39:23 by raneuman         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef  ZOMBIE_H
 # define ZOMBIE_H
 
@@ -23,6 +11,7 @@ class	Zombie
 	private:
 		std::string	name;//Appartient a chque objet Zombie.
 	public:
+		Zombie();
 		Zombie(std::string zombieName);//Le constructeur sert à initialiser mon objet avec le nom que je choisi de donner.
 		~Zombie();
 		void	announce( void );
@@ -30,6 +19,5 @@ class	Zombie
 
 Zombie*	newZombie( std::string name );
 void	randomChump( std::string name );
-		
 
 #endif

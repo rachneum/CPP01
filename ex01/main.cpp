@@ -1,31 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: raneuman <raneuman@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/17 18:18:03 by raneuman          #+#    #+#             */
-/*   Updated: 2025/07/17 20:09:09 by raneuman         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "Zombie.hpp"
 
-int	main(int argc, char **argv)
+int main()
 {
-	if (argc == 1)
-	{
-		Zombie	*heapZombie = newZombie("Mimi Kai");
-		heapZombie->announce();
-		randomChump("Rachel");
-		delete heapZombie;
-		return (0);
-	}
-	else
-	{
-		std::cerr << "Error: Not the right amount of arguments!" << std::endl;
-		return (EXIT_FAILURE); 
-	}
-	return (0);
+    Zombie *horde = zombieHorde(6, "Mimi Kai");
+    for (int i = 0; i < 6; i++)
+        horde[i].announce();
+    delete[]horde;
+    return (0);
 }
