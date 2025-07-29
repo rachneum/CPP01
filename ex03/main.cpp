@@ -4,14 +4,14 @@
 int main()
 {
     {//Temporaire, une fois que je sors et passe à la braquet suivante ce contenu dissparait.
-        Weapon club = Weapon("crude spiked club");
+        Weapon club("crude spiked club");
         HumanA bob("Bob", club);
         bob.attack();
         club.setType("some other type of club");
         bob.attack();
     }
     {
-        Weapon club = Weapon("crude spiked club");
+        Weapon club("crude spiked club");
         HumanB jim("Jim");
         jim.setWeapon(club);
         jim.attack();
