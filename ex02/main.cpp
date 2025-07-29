@@ -3,9 +3,9 @@
 
 int main()
 {
-    std::string sentence = "HI THIS IS BRAIN";
-    std::string     *stringPTR = &sentence;
-    std::string     &stringREF = sentence;
+    std::string     sentence = "HI THIS IS BRAIN";
+    std::string*    stringPTR = &sentence;
+    std::string&    stringREF = sentence;
 
     std::cout << "The memory address of the string variable: " << &sentence << std::endl;
     std::cout << "The memory address held by stringPTR: " << stringPTR << std::endl;

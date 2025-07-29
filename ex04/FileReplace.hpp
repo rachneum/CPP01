@@ -3,7 +3,7 @@
 
 # include <string>
 # include <iostream>
-# include <fstream>
+# include <fstream>//Por ifstream(), ofstream();
 
 class   ReplaceFile
 {
@@ -14,9 +14,9 @@ class   ReplaceFile
 
     public:
         ReplaceFile();
-        ReplaceFile(const std::string &filename, const std::string &s1, const std::string &s2);
+        ReplaceFile(const std::string& filename, const std::string& s1, const std::string& s2);
         ~ReplaceFile();
-        bool process();
+        bool    process();
 };
 
 #endif

@@ -1,6 +1,9 @@
 #include "HumanB.hpp"
 
-HumanB::HumanB() : weapon(NULL) {}
+HumanB::HumanB() : weapon(NULL)
+{
+    std::cout << "HumanB constructor called." << std::endl;
+}
 
 HumanB::HumanB(std::string nameB) : name(nameB), weapon(NULL)
 {

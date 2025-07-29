@@ -1,12 +1,22 @@
 #include "FileReplace.hpp"
 
-ReplaceFile::ReplaceFile() {}
+ReplaceFile::ReplaceFile()
+{
+    std::cout << "ReplaceFile constructor called." << std::endl;
+}
 
-ReplaceFile::ReplaceFile(const std::string &filename, const std::string &s1, const std::string &s2) : _filename(filename), _s1(s1), _s2(s2) {}
+ReplaceFile::ReplaceFile(const std::string& filename, const std::string& s1, const std::string& s2) : _filename(filename), _s1(s1), _s2(s2)
+{
+    std::cout << "ReplaceFile created for file '" << _filename
+              << "' replacing '" << _s1 << "' with '" << _s2 << "'." << std::endl;
+}
 
-ReplaceFile::~ReplaceFile() {}
+ReplaceFile::~ReplaceFile()
+{
+    std::cout << "ReplaceFile destructor called." << std::endl;
+}
 
-bool ReplaceFile::process()
+bool    ReplaceFile::process()
 {
     std::ifstream   infile(_filename);
     if (!infile.is_open())

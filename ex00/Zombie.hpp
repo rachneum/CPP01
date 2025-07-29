@@ -1,15 +1,13 @@
 #ifndef  ZOMBIE_H
 # define ZOMBIE_H
 
-# include <string>//Me permet d'utiliser std::string.
+# include <string>
 # include <iostream>
-# include <cctype>//Pour isspace.
-# include <cstdlib>//Pour exit.
 
 class	Zombie
 {
 	private:
-		std::string	name;//Appartient a chque objet Zombie.
+		std::string	name;//Appartient a chaque objet Zombie.
 	public:
 		Zombie();
 		Zombie(std::string zombieName);//Le constructeur sert à initialiser mon objet avec le nom que je choisi de donner.

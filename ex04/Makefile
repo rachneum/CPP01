@@ -1,4 +1,4 @@
-NAME = sed
+NAME = filereplace
 
 SRCS = 	main.cpp\
 		FileReplace.cpp\
